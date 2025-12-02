@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private float moveSpeed = 5f;
+    [field : SerializeField] private float moveSpeed = 5f;
     private float jumpForce = 10f;
 
     private Rigidbody2D rb;
@@ -22,8 +22,28 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void SetMoveSpeed(float newSpeed)
+    {
+
+        Debug.Log("Player speed Increase "+ newSpeed );
+    }
+
+    public void SetInvulnerability(bool isEnabled)
+    {
+        Debug.Log("");
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         
+    }
+
+    public void Move()
+    {
+        
+    }
+
+    public void Jump()
+    {
+
     }
 }

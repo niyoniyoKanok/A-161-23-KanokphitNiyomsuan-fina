@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class ShieldBuff : MonoBehaviour
+public class ShieldBuff : PowerUpBase
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void ApplyEffect(Player player)
     {
-        
+        throw new System.NotImplementedException();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
