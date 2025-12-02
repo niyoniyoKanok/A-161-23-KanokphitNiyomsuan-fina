@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [field : SerializeField] private float moveSpeed = 5f;
+    private float moveSpeed = 5f;
     private float jumpForce = 10f;
+
+    [field : SerializeField] public float MoveSpeed { get; private set; }
+    [field : SerializeField]public bool IsInvulnerable { get; private set; }
 
     private Rigidbody2D rb;
 
@@ -34,7 +37,10 @@ public class Player : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (rb != null)
+        {
+
+        }
     }
 
     public void Move()
